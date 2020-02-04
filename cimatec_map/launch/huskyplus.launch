@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Includes the model folder on the Gazebo default model folder -->
+    <env name="GAZEBO_MODEL_PATH"    value="${GAZEBO_MODEL_PATH}:$(find cimatec_map)/model"/>
+    <env name="GAZEBO_RESOURCE_PATH" value="${GAZEBO_RESOURCE_PATH}:$(find cimatec_map)/model"/>
+
+  <!--General arg definitions-->
+    <arg name="use_sim_time"      value="true"/>
+    <arg name="debug"             default="false"/>
+    <arg name="gui"               default="true"/>
+    <arg name="headless"          default="false"/>
+    <arg name="pause"             default="false"/>
+    <arg name="verbose"           default="true"/>
+    <arg name="urdf_extras"       default="$(find custom_husky)/urdf/custom_description.xacro"/>
+
+<!--Worldly args-->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+
+    <arg name="world_name"        value="$(find cimatec_map)/world/cimatec.world"/>
+    <arg name="debug"             value="$(arg debug)" />
+    <arg name="gui"               value="$(arg gui)" />
+    <arg name="paused"            value="$(arg pause)"/>
+    <arg name="headless"          value="$(arg headless)"/>
+  </include>
+
+<!--Husky arguments-->
+      <arg name="laser_enabled"   default="false"/>
+      <arg name="kinect_enabled"  default="false"/>
+
+<!--Husky settings-->
+  <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
+    <arg name="urdf_extras"       value="$(arg urdf_extras)"/>
+    <arg name="laser_enabled"     value="$(arg laser_enabled)"/>
+    <arg name="kinect_enabled"    value="$(arg kinect_enabled)"/>
+    <arg name="x"                 value="49"/>
+    <arg name="y"                 value="10"/>
+    <arg name="z"                 value="0.3"/>
+    <arg name="yaw"               value="3.14159265359"/>
+  </include>
+
+<!--Include velocity command through XBox controller
+   <include file="$(find xjoy)/launch/teleop.launch"/> -->
+
+</launch>

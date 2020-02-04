@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="navi" name="node_camera_mission" type="leomission.py" output="screen"/>
+</launch>
