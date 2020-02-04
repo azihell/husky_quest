@@ -1,4 +1,4 @@
-## huskyprj_ws
+## Navigation challenge 01
 Husky on a quest for a yellow sphere on CIMATEC school grounds
 
 Here we have a Clearpath modified Husky robot equipped with a [laser scan](https://github.com/ros-perception/pointcloud_to_laserscan) and a monocular camera searching for a yellow(ish?) sphere.
