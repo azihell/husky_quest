@@ -1,8 +1,0 @@
-prefix=/home/azihell/ROS/husky_quest/devel
-
-Name: custom_husky
-Description: Description of custom_husky
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
