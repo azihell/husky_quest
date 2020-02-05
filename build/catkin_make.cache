@@ -1,0 +1,2 @@
+cimatec_map:custom_config:custom_husky:navi:pointcloud_to_laserscan2:quaternion_euler:velodyne_description:xjoy
+-DCATKIN_DEVEL_PREFIX=/home/azihell/ROS/husky_quest/devel -DCMAKE_INSTALL_PREFIX=/home/azihell/ROS/husky_quest/install -G Unix Makefiles

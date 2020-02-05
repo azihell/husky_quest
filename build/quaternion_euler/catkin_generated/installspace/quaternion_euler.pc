@@ -1,0 +1,8 @@
+prefix=/home/azihell/ROS/husky_quest/install
+
+Name: quaternion_euler
+Description: Description of quaternion_euler
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/azihell/ROS/husky_quest/devel
+
+Name: navi
+Description: Description of navi
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

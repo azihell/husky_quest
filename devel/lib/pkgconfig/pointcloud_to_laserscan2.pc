@@ -1,0 +1,8 @@
+prefix=/home/azihell/ROS/husky_quest/devel
+
+Name: pointcloud_to_laserscan2
+Description: Description of pointcloud_to_laserscan2
+Version: 1.4.1
+Cflags: -I/home/azihell/ROS/husky_quest/src/pointcloud_to_laserscan2/include
+Libs: -L${prefix}/lib -llaserscan_to_pointcloud -lpointcloud_to_laserscan
+Requires: laser_geometry message_filters nodelet roscpp sensor_msgs tf2 tf2_ros tf2_sensor_msgs

@@ -1,0 +1,8 @@
+prefix=/home/azihell/ROS/husky_quest/devel
+
+Name: xjoy
+Description: Description of xjoy
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
