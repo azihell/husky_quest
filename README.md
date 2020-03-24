@@ -1,7 +1,7 @@
 ## Navigation challenge 01
 Husky on a quest for a yellow sphere on CIMATEC school grounds
 
-Here we have a Clearpath modified Husky robot equipped with a [laser scan](https://github.com/ros-perception/pointcloud_to_laserscan) and a monocular camera searching for a yellow(ish?) sphere.
+Here we have a [Clearpath (modified) Husky](https://www.clearpathrobotics.com/assets/guides/husky/SimulatingHusky.html) robot equipped with a [laser scan](https://github.com/ros-perception/pointcloud_to_laserscan) and a monocular camera searching for a yellow(ish?) sphere.
 
 The robot uses 2D navigation solution [nav2d](http://wiki.ros.org/nav2d_navigator?distro=melodic) along with [GMapping](http://wiki.ros.org/gmapping) to be able to safely move around while looking for a yellow sphere by means of a monocular camera and OpenCV circle detection. By using distance calibration on a known size object, the software can determine the camera distance to the object and then instruct the nav2d package on how to move the robot to the desired location (close to the sphere).
 
